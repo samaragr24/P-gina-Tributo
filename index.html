@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lin-Manuel Miranda</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script>
+      function myFunction() {
+        const navigationBar = document.getElementById("navigation-bar");
+        if (navigationBar.className === "navigation-bar") {
+          navigationBar.className += " responsive";
+        } else {
+          navigationBar.className = "navigation-bar";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Lin-Manuel Miranda</h1>
+      <p>1980, Nueva York</p>
+    </header>
+
+    <nav id="navigation-bar" class="navigation-bar">
+      <ul>
+        <li><a class="active" href="index.html">Inicio</a></li>
+        <li><a href="#">Página 2</a></li>
+        <li><a href="#">Página 3</a></li>
+        <li class="menu__hamburger-icon">
+          <a href="javascript:void(0);" onclick="myFunction()">
+            <i class="lni lni-menu"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="main-content-container">
+      <aside id="links-sidebar">
+        <h2>Sitios de interés</h2>
+        <ul>
+          <li><a href="#">Stephen Sondheim</a></li>
+          <li><a href="#">Toby Marlow</li>
+          <li><a href="#">Abigail Barlow</a></li>
+          <li><a href="#">Emily Bear</a></li>
+        </ul>
+
+      </aside>
+      <section id="main-content">
+        <img
+          src="lin photo.jpeg"
+          alt="Lin Manuel Miranda"
+          class="main-content__img--full-width"
+        />
+
+        <h2>Biografía</h2>
+        <p>
+          Nacido el 16 de enero de 1980, en Nueva York, Nueva York, Lin-Manuel
+          Miranda es un actor, compositor, letrista y escritor estadounidense
+          que creó y protagonizó producciones teatrales que combinan formas
+          musicales modernas con el teatro musical clásico.
+        </p>
+        <p>
+          Lin-Manuel Miranda es considerado por muchos como uno de los genios de
+          la industria del entretenimiento de este siglo: el compositor,
+          arreglista, coreógrafo, actor, director, productor y dramaturgo ha
+          brillado en cada aspecto de su carrera. Nacido en el barrio ultra
+          latino Washington Heights del Bronx, Nueva York, ha sido merecedor de
+          más de 40 reconocimientos por su excelencia artística: algunos premios
+          obtenidos son un Pullitzer, 3 Tony, 3 Grammys, 2 Emmys, 2 Olivier, un
+          Genius Gran y la estrella en el Paseo de la fama de Hollywood.
+        </p>
+
+        <h2>Musicales más importantes</h2>
+        <h3>In the Heights</h3>
+        <img
+          src="inthe.webp"
+          alt="in the Heights"
+          class="main-content__img--full-width"
+        />
+        <p>
+          La historia de un dominicano americano que sueña con vivir en las
+          playas del Caribe ha tenido la participación de Lin-Manuel Miranda en
+          varios momentos: como su protagonista en Broadway, escritor de las
+          canciones originales de la versión teatral, protagonista de multiples
+          funciones por todo Estados Unidos, productor ejecutivo de la película
+          de 2021.
+        </p>
+
+        <h3>Tick Tick Boom</h3>
+        <img
+          src="tick-tick-boom-21.webp"
+          alt="Tick Tick Boom"
+          class="main-content__img--full-width"
+        />
+        <p>
+          Al igual que en In The Heights, Lin-Manuel ha participado en Tick Tick
+          Bom en varios momentos: En 2014 fue el protagonista del famoso musical
+          teatral basado en la historia de Jonathan Larson. Siete años después
+          la película fue llevada al cine de la mano de Netflix y en ella Lin
+          fue el director y productor ejecutivo. Esta película marcó su debut
+          como cineasta.
+        </p>
+
+        <h3>Hamilton</h3>
+        <img
+          src="hamilton_7984f03f.webp"
+          alt="Hamilton"
+          class="main-content__img--full-width"
+        />
+        <p>
+          Es el proyecto más premiado de Miranda hasta la fecha: allí fue el
+          creador de la música, las canciones y la historia que se muestra en
+          las tablas, pero que fue inspirada por el libro Alexander Hamilton.
+          Fue el ganador de un Pullitzer y por la obra recibió un sinfin de
+          reconocimientos gubernamentales.
+        </p>
+
+        <h3>Encanto</h3>
+        <img
+          src="encanto.jpeg"
+          alt="Encanto"
+          class="main-content__img--full-width"
+        />
+        <p>
+          En 2021 se estrenó la película de Disney que tiene lugar en un pueblo
+          mágico de Colombia: allí Lin-Manuel fue contratado para componer la
+          letra de todas las canciones y ser el director musical de todos los
+          números. Los temas principales de la película fueron Colombia, Mi
+          Encanto, Dos Orugüitas, Surface Pressure y We Don't Talk About Bruno.
+        </p>
+      </section>
+    </div>
+
+    <footer id="footer">
+      <div class="footer__social footer__section">
+        <h2>Redes sociales</h2>
+
+        <div class="social__networks">
+          <div class="social__network">
+            <span class="social__icon-container">
+              <i class="lni lni-github-original social__icon"></i>
+            </span>
+            <span class="social__icon-handler">
+              <a href="https://github.com/samaragr24"> samaragr24 </a>
+            </span>
+          </div>
+          
+      </div>
+      <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+          <form>
+            <label for="contactEmail"> Correo electronico:</label>
+            <input
+              id="contactEmail"
+              required
+              type="email"
+              placeholder="Ingresa tu correo electronico"
+            />
+
+            <label for="contactMessage"> Mensaje:</label>
+            <textarea id="contactMessage" required rows="4" cols="50">
+            </textarea>
+
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </div>
+      <div class="footer__more-sites footer__section">
+        <h2>Otros de mis sitios</h2>
+        <ul>
+          <li><a href="#">Stephen Sondheim</a></li>
+          <li><a href="#">Toby Marlow</a></li>
+          <li><a href="#">Abigail Barlow</a></li>
+          <li><a href="#">Emily Bear</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
